@@ -1,0 +1,280 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!--Bootstarp icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+<style>
+.format{
+color: azure;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+html{
+	background: url(header.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	
+}
+body{
+	margin-left:15%;
+	margin-right:15%;
+	margin-bottom: 3%;
+	margin-top: 1%;
+}
+
+table,tr,th,td{
+border: 2px solid black;
+border-collapse: collapse;
+border-spacing: 2px;
+border-color: rgb(197, 190, 226);
+}
+th, td {
+  padding: 10px;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "QUALIFICATION"; }
+	td:nth-of-type(2):before { content: "BOARD/DEGREE"; }
+	td:nth-of-type(3):before { content: "YEARS STUDIED"; }
+	td:nth-of-type(4):before { content: "UNIVERSITY"; }
+	td:nth-of-type(5):before { content: "PERCENTAGE"; }
+
+}	
+
+a{
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+.page{
+	padding: 0px 10px;
+}
+nav li{
+	padding: 0px 15px;
+}
+</style>
+	</head>
+	<body>
+		
+		<header class="format" style="background-color: rgb(0, 0, 0); padding: 1px;" >
+			<a name="top"></a>
+				<h1> <center>PORTFOLIO</center></h1>
+		</header> 
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#about">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#edu">EDUCATIONAL QUALIFICATION</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skills">SKILLS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#lang">LANGUAGES KNOWN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#certificates">CERTIFICATES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#mem">MEMBER OF</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#internship">INTERNSHIP</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#workshops">WORKSHOPS ATTENDED</a>
+					</li>		 
+					</ul>
+		  </div>
+		</div>
+	  </nav>
+	  <div class="page">
+	<section>
+
+	<h2 style="color: darkslateblue;"><a name="about"></a>ABOUT</h2>
+		<h2>Pooja Venkatesan</h2>
+		<p>B Tech in Computer Science Engineering</p>
+		<p>III Year Student</p>
+		<h3>EMAIL:</h3>
+		<p>poojavenkatesan011@gmail.com</p>
+		<hr>
+		<h2 style="color: darkslateblue;"><a name="edu"></a>EDUCATIONAL QUALIFICATION</h2>
+		<table>
+		<thead>
+		<tr>
+			<th>QUALIFICATION</th>
+			<th>STREAM,BOARD / DEGREE, SPECIALIZATION </th>
+			<th>YEARS STUDIED</th>
+			<th>UNIVERSITY</th>
+			<th>PERCENTAGE</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>B.Tech 
+		</td>
+		<td> Computer Science Engineering<br>
+		Integrated IBM Special</td>
+		<td>2019 -</td>
+		<td>B.S Abdur Rahman Crescent Institute Of
+		Science And Technology
+		</td>
+		</tr>
+		<tr>
+		<td>12th Standard</td>
+		<td>Science, CBSE</td>
+		<td>2017 - 2019</td>
+		<td>
+		Alwin Memorial Public School</td>
+		<td>85.2%</td>
+		</tr>
+		<tr>
+			
+			<td>10th Standard</td>
+			<td>CBSE</td>
+			<td>2013 - 2017</td>
+			<td>Srimathi Sundaravalli Memorial Public School</td>
+			<td>89.3%</td>
+		</tr>
+
+		</tbody>
+		</table>
+		<hr>
+		<h2 style="color: darkslateblue;"><a name="skills"></a>SKILLS</h2>
+		<h3>Technical Skills</h3>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>Python</li>
+			<li>Bootstrap</li>
+			<li>Figma</li>
+		</ul>
+		<h3>Personal Skills</h3>
+		<ul>
+			<li>Empathy</li>
+			<li>Creativity</li>
+			<li>Flexibility</li>
+			<li>Responsibility</li>
+		</ul>
+		<hr>
+		<h2 style="color: darkslateblue;"><a name="lang"></a>LANGUAGES KNOWN</h2>
+		<ul>
+		<li>English</li>
+		<li>Tamil</li>
+		<li>Telugu</li>
+		</ul>
+		<hr>
+		<h2 style="color: darkslateblue;"><a name="certificates"></a>CERTIFICATES</h2>
+		<ul>
+		<li>Python 101 for Data Science<br>
+		<p style="color:brown;"><i>IBM Cognitive Class Python</i></p></li>
+		<li>Python Course Completion<br> 
+		<p style="color:brown;"><i>Conducted by EI-Shaddai Training Solution</i></p></li>
+		<li>Python Crash Course<br> 
+			<p style="color:brown;"><i>Google Career Certificates - Coursera</i></p></li>
+		<li>Enterprise Design Thinking Practitioner<br> 
+			<p style="color:brown;"><i>IBM</i></p></li>
+		<li>Technical Support Fundamentals<br> 
+			<p style="color:brown;"><i>Google Career Certificates - Coursera</i></p></li>
+			<li>Enterprise Design Thinking Practitioner<br> 
+			<p style="color:brown;"><i>IBM</i></p></li>
+			<li>Web Development with HTML, CSS, JavaScript Essentials <br> 
+			<p style="color:brown;"><i>IBM - Coursera</i></p></li>
+			<li>Responsive Web Design<br> 
+			<p style="color:brown;"><i>freeCodeCamp</i></p></li>
+		</ul>
+		<hr>
+		<h2 style="color: darkslateblue;"><a name="mem"></a>MEMBER OF</h2>
+		<ul>
+			<li>Crescent Team Dramatics</li>
+			<li>Cres Crew (Classical Dance)</li>
+			<li>Crescent NSS</li>
+			<li>Bhumi NGO</li>
+		</ul>
+		<hr>
+		<h2 style="color: darkslateblue;"><a name="internship"></a>INTERNSHIP</h2>
+		<ul>
+			<li>THE SPARKS FOUNDATION 
+				<p style="color:brown;"><i>Web Development Intern - October 2021</i></p>
+			</li>
+		</ul>
+		<hr>
+		<h2 style="color: darkslateblue;"><a name="workshops"></a>WORKSHOPS ATTENDED</h2>
+		<ul>
+			<li>Robotic Process Automation 
+				<p style="color:brown;"><i>Conducted by DAKSH’21, National level Techno-Management fest of SASTRA Deemed to be
+					University in collabration with Skill Safari.</i></p>
+			</li>
+			<li> Getting started with Web Development - Sampark 2021
+				<p style="color:brown;"><i>Conducted by  Shaastra, an annual technical festival of IIT Madras.</i></p>
+			</li>
+		</ul>
+		<hr>
+
+		<div class="text-center" style="display: flex; justify-content:flex-end;">
+		<a href="#top" >
+			<button class="btn btn-info"> Back To Top &nbsp; <i class="bi bi-arrow-up-circle"></i></button> 
+		</a>
+		&nbsp;&nbsp;
+		<a href="https://mailchi.mp/efd2c730ccb1/poojavenkatesan-resume" >
+			<button class="btn btn-dark btn-xl">Contact &nbsp; <i class="bi bi-envelope"></i></button>
+		</a>
+		</div>
+		<br>
+		</section>
+
+	</div>
+	</body>
+</html>
